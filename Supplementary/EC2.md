@@ -46,3 +46,31 @@ Security groups can be attached to multiple instances and multiple security grou
 **Dedicated Instances** -- No other customers will share your hardware
 
 **Capacity Reservations** -- Reserve capacity in a specific AZ for any duration.
+
+## EC2 Instance Storage
+
+### EBS
+
+An EBS (Elastic Block Store) Volume is a network drive we can attach to our instances while they run.
+
+They can be quickly attached from one EC2 instance to another but are locked to a specific availability zone.
+
+EBS Volumes can also be left unattached or we can have multiple EBS Volumes attached to a single EC2 instance.
+
+We can make a "copy" of an EBS volume's data at a specific point in time using the _EBS Snapshots_ feature.
+
+### AMI
+
+AMI stands for _Amazon Machine Image_. AMIs are a customization of an EC2 instance.
+
+### EC2 Instance Store
+
+_EC2 Instance Stores_ are high performance hardware disks that are great for buffer/cache/temporary content, but they lose their storage if they are stopped.
+
+### EFS
+
+EFS (Elastic File System) is a managed NFS (network file system) that can be mounted to 100s of EC2 instances.
+
+### Amazon FSx
+
+A fully managed service for launching 3rd party high performance file systems on AWS.
